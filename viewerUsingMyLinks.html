@@ -27,11 +27,11 @@ See https://github.com/adobe-type-tools/cmap-resources
     <meta name="google" content="notranslate" />
     <title>PDF.js viewer</title>
     <!-- @44cdef037bb47846eec9b72e77a5178f2d42df2d -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fremst/PDFReader/demo/pdf.js/legacy/web/viewer.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fremst/PDFTest/demo/pdf-js/legacy/web/viewer.css" />
 
     <!-- This snippet is used in production (included from viewer.html) -->
-    <link rel="resource" type="application/l10n" href="https://cdn.jsdelivr.net/gh/fremst/PDFReader/demo/pdf.js/legacy/web/locale/locale.properties" />
-    <script src="https://cdn.jsdelivr.net/gh/fremst/PDFReader/demo/pdf.js/build/pdf.js"></script>
+    <link rel="resource" type="application/l10n" href="https://cdn.jsdelivr.net/gh/fremst/PDFTest/demo/pdf-js/legacy/web/locale/locale.properties" />
+    <script src="https://cdn.jsdelivr.net/gh/fremst/PDFTest/demo/pdf-js/build/pdf.js"></script>
     <script>
       let pageNum = 1;
       let pdfUrl = "https://3e213026-3c3a-4e46-9de5-202595989bda.usrfiles.com/ugd/5f9142_cb6916e7baf8412c88f57907e9e36286.pdf";
@@ -911,7 +911,7 @@ See https://github.com/adobe-type-tools/cmap-resources
                 },
                 workerSrc: {
                   //   value: "../build/pdf.worker.js",
-                  value: "https://cdn.jsdelivr.net/gh/fremst/PDFReader/demo/pdf.js/build/pdf.worker.js",
+                  value: "https://cdn.jsdelivr.net/gh/fremst/PDFTest/demo/pdf-js/build/pdf.worker.js",
                   kind: OptionKind.WORKER,
                 },
               };
@@ -933,7 +933,7 @@ See https://github.com/adobe-type-tools/cmap-resources
                   kind: OptionKind.VIEWER + OptionKind.PREFERENCE,
                 };
                 defaultOptions.sandboxBundleSrc = {
-                  value: "https://cdn.jsdelivr.net/gh/fremst/PDFReader/demo/pdf.js/build/pdf.sandbox.js",
+                  value: "https://cdn.jsdelivr.net/gh/fremst/PDFTest/demo/pdf-js/build/pdf.sandbox.js",
                   kind: OptionKind.VIEWER,
                 };
               }
@@ -4334,7 +4334,7 @@ See https://github.com/adobe-type-tools/cmap-resources
               if (typeof window !== "undefined" && window["pdfjs-dist/build/pdf"]) {
                 pdfjsLib = window["pdfjs-dist/build/pdf"];
               } else {
-                pdfjsLib = require("https://cdn.jsdelivr.net/gh/fremst/PDFReader/demo/pdf.js/build/pdf.js");
+                pdfjsLib = require("https://cdn.jsdelivr.net/gh/fremst/PDFTest/demo/pdf-js/build/pdf.js");
               }
 
               module.exports = pdfjsLib;
@@ -16227,7 +16227,7 @@ See https://github.com/adobe-type-tools/cmap-resources
                 },
                 printContainer: document.getElementById("printContainer"),
                 openFileInput: document.getElementById("fileInput"),
-                debuggerScriptPath: "https://cdn.jsdelivr.net/gh/fremst/PDFReader/demo/pdf.js/web/debugger.js",
+                debuggerScriptPath: "https://cdn.jsdelivr.net/gh/fremst/PDFTest/demo/pdf-js/web/debugger.js",
               };
             }
 
